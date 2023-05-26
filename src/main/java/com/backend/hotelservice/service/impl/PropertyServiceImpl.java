@@ -24,7 +24,8 @@ public class PropertyServiceImpl implements PropertyService {
 //        property.setPropertyOwner(propertyOwner);
 //        Property property1 = propertyRepository.save(property);
 //        return property;
-        return null;
+        propertyRepository.save(property);
+        return property;
     }
 
     @Override

@@ -34,11 +34,11 @@ public class Property {
     @NotNull(message = "location cannot be null")
     @ApiModelProperty(notes = "location of Hotel", example = "colombo")
     private String location;
-//    @ManyToOne
-//    @JoinColumn(name = "propertyOwner", nullable = false)
-//    @JoinColumn(name = "propertyOwner")
-//    @JsonIgnore
-//    private PropertyOwner propertyOwner;
+    @ManyToOne
+    @JoinColumn(name = "propertyOwner", nullable = false)
+    @JoinColumn(name = "propertyOwner")
+    @JsonIgnore
+    private PropertyOwner propertyOwner;
 //    @OneToMany(cascade = CascadeType.ALL, mappedBy = "property",fetch = FetchType.LAZY)
 //    @JsonIgnore
 //    private List<RoomDetails> roomDetails;
